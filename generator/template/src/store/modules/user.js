@@ -14,7 +14,7 @@ export default {
     msg: ''
   },
   mutations: {
-    [FETCH_USER_REQUEST] (state, payload) {
+    [FETCH_USER_REQUEST] (state) {
       state.fetching = true
     },
     [FETCH_USER_SUCCESS] (state, payload) {
@@ -34,7 +34,7 @@ export default {
     }
   },
   actions: {
-    fetchUser ({ commit, state }) {
+    fetchUser ({ commit }) {
       commit(FETCH_USER_REQUEST)
       apis.user
           .fetchInfo()

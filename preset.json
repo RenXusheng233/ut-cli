@@ -3,12 +3,12 @@
   "cssPreprocessor": "less",
   "router": true,
   "routerHistoryMode": false,
-  "vuex": false,
+  "vuex": true,
 
   "plugins": {
     "@vue/cli-plugin-babel": {},
     "@vue/cli-plugin-eslint": {
-      "config": "standard",
+      "config": "prettier",
       "lintOn": ["save", "commit"]
     }
   },
@@ -24,7 +24,8 @@
     "browserslist": [
       "> 1%",
       "last 2 versions",
-      "not ie <= 8"
+      "not ie <= 8",
+      "test"
     ]
   }
 }
