@@ -15,17 +15,7 @@
 
   "configs": {
     "postcss": {
-      "vue": {},
-      "plugins": {},
-      "eslintConfig": {},
-      "jest": {}
-    },
-
-    "browserslist": [
-      "> 1%",
-      "last 2 versions",
-      "not ie <= 8",
-      "test"
-    ]
+      "plugins": {}
+    }
   }
 }

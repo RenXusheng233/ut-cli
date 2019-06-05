@@ -1,5 +1,5 @@
 module.exports = [
-    //选择ui框架 - 默认为element-ui
+    // 选择ui框架 element-ui/iview - 默认为element-ui
   {
     name: 'ui-framework',
     type: 'list',
@@ -17,11 +17,19 @@ module.exports = [
     default: 'element-ui'
   },
 
-    //是否使用echarts
+    // 是否使用echarts
   {
     name: "echarts",
     type: "confirm",
-    message: `是否需要使用 echarts`,
+    message: `是否需要安装 echarts`,
+    default: false
+  },
+
+    // 是否使用d3
+  {
+    name: "d3",
+    type: "confirm",
+    message: `是否需要安装 d3`,
     default: false
   },
 ]
