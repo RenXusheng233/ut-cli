@@ -3,7 +3,6 @@ module.exports = (api, opts, rootOpts) => {
   // npm命令
   api.extendPackage({
     scripts: {
-      dev: 'vue-cli-service serve --copy',
       serve: 'vue-cli-service serve',
       build: 'vue-cli-service build --silent',
       lint: 'vue-cli-service lint',
@@ -15,22 +14,18 @@ module.exports = (api, opts, rootOpts) => {
   // 开发依赖包
   api.extendPackage({
     devDependencies: {
-      //a CSS processor resources loader for webpack
       'vue-cli-plugin-ut-builder': '^2.1.1',
-      'serve': '^10.1.2',
     }
   })
 
   // 项目依赖
   api.extendPackage({
     dependencies: {
+      // ut-builder中会自行安装,考虑将其变更为可选模式
+      // 'icefox': '^1.1.1',
+      'vue-router': '^3.0.2',
+      'vuex': '^3.1.0',
       'axios': '^0.18.0',
-      'vue-cookie': '^1.1.4',
-      'utvue': '^1.0.21',
-      'icefox': '^1.1.1',
-      'time-stamp': '^2.2.0',
-      'qs': '6.6.0',
-      'base-64': '^0.1.0',
       [opts['ui-framework']]: opts['ui-framework'] === 'element-ui' ? '^2.4.7' : '^3.1.1'
     }
   })

@@ -1,9 +1,7 @@
 {
   "useConfigFiles": true,
   "cssPreprocessor": "less",
-  "router": true,
   "routerHistoryMode": false,
-  "vuex": true,
 
   "plugins": {
     "@vue/cli-plugin-babel": {},
